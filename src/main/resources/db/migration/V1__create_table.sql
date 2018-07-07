@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS currency;
+
+CREATE TABLE `currency` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(64) NOT NULL,
+  `unit` VARCHAR(10) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
