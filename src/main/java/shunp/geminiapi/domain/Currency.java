@@ -20,4 +20,11 @@ public class Currency {
     private String name;
 
     private String unit;
+
+    public static Currency newCurrency(String name, String unit) {
+        Currency currency = new Currency();
+        currency.name = name;
+        currency.unit = unit;
+        return currency;
+    }
 }

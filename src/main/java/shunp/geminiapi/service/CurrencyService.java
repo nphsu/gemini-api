@@ -16,4 +16,12 @@ public class CurrencyService {
     public List<Currency> findAll() {
         return currencyRepository.findAll();
     }
+
+    public Currency save(String name, String unit) {
+        return currencyRepository.save(Currency.newCurrency(name, unit));
+    }
+
+    public void delete(Long id) {
+        currencyRepository.findById(id).ifPresent(currency -> currencyRepository.delete(currency));
+    }
 }
