@@ -9,5 +9,5 @@ public class CurrencyAddRequest {
 
     private String name;
 
-    private String unit;
+    private String symbol;
 }

@@ -17,8 +17,8 @@ public class CurrencyService {
         return currencyRepository.findAll();
     }
 
-    public Currency save(String name, String unit) {
-        return currencyRepository.save(Currency.newCurrency(name, unit));
+    public Currency save(String name, String symbol) {
+        return currencyRepository.save(Currency.newCurrency(name, symbol));
     }
 
     public void delete(Long id) {
